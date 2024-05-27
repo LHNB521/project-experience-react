@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# screen-template-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+基于React+typescript+Vite
 
-Currently, two official plugins are available:
+# 开发环境和工具
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- node 19.9.0
+- pnpm 9.1.1
+- vscode
+- vscode插件：EditorConfig for VS Code(EditorConfig 使项目代码风格在不同开发人员编辑器中保持一致)
+- vscode插件：ESLint(ESLint 是一个用于检测 JavaScript 代码问题的工具)
+- vscode插件：Prettier(Prettier 是一个代码格式化工具，可以自动格式化代码，使其符合统一的风格)
 
-## Expanding the ESLint configuration
+# 项目目录
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
