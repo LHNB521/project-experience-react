@@ -14,6 +14,14 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 				'@': '/src',
 			}
 		},
+		css: {
+			preprocessorOptions: {
+				less: {
+					javascriptEnabled: true,
+					charset: false
+				},
+			},
+		},
 		server: {
 			open: true,
 			port: Number(VITE_SERVER_PORT),

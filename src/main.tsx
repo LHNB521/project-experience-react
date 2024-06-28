@@ -8,3 +8,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 		<App />
 	</React.StrictMode>,
 )
+
+const loadingElement = document.getElementById('loading')
+if (loadingElement && loadingElement.style?.display !== 'none') {
+	console.log('loadingElement', loadingElement)
+	loadingElement.style.display = 'none'
+}
