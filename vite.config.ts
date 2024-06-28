@@ -1,5 +1,6 @@
 import { ConfigEnv, defineConfig, loadEnv, UserConfig } from 'vite'
 import { createVitePlugins } from './vite/createVitePlugins';
+import { buildOptions } from './vite/buildOptions';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
@@ -17,9 +18,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 			open: true,
 			port: Number(VITE_SERVER_PORT),
 		},
+		build: buildOptions()
 	}
 })
-function handleEnv(env: Record<string, string>) {
-	throw new Error('Function not implemented.');
-}
 
